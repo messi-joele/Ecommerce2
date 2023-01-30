@@ -120,5 +120,7 @@ namespace Ecommerce
                     throw new Exception("Inserire una descrizione valida");
             }
         }
+
+        
     }
 }

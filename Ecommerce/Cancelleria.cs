@@ -6,24 +6,23 @@ using System.Threading.Tasks;
 
 namespace Ecommerce
 {
-    internal class Cancelleria :Prodotto
+    public class Cancelleria :Prodotto
     {
-        private DateTime giorni;
-        public Cancelleria (string id, string nome, string prod, string descr, decimal prezzo, DateTime giorni) : base(id, nome, prod, descr, prezzo)
+       
+        public Cancelleria (string id, string nome, string prod, string descr, decimal prezzo) : base(id, nome, prod, descr, prezzo)
         {
-            Giorni = giorni;
+           
             
 
         }
-            public DateTime Giorni
-        {
-            get { return giorni; }
-            set { giorni = value; }
-        }
+        
 
-        public void Sconto()
+        public  void Sconto()
         {
-
+            if( DateTime.Today.Day % 2 == 0)
+            {
+                Prezzo -= Prezzo * 0.03m;
+            }
         }
     }
 }
