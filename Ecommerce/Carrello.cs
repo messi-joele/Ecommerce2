@@ -50,10 +50,16 @@ namespace Ecommerce
         }
         public void Aggiungi(Prodotto p)
         {
+
+
             if (p != null)
+            {
                 _prodotti[getNumProdotti()] = p;
-            else
-                throw new Exception("Inserire un prodotto valido");
+
+                
+            }
+            else { 
+                throw new Exception("Inserire un prodotto valido"); }
         }
         public Prodotto Rimuovi(Prodotto p)
         {

@@ -14,7 +14,7 @@ namespace Ecommerce
         private string _produttore;
         private decimal _prezzo;
         private string _descrizione;
-
+     
         public Prodotto(string id, string nome, string prod, string descr, decimal prezzo)
         {
             Id = id;
@@ -22,9 +22,10 @@ namespace Ecommerce
             Produttore = prod;
             Descrizione = descr;
             Prezzo = prezzo;
+           
         }
 
-       
+
         public Prodotto(string id, string nome, string prod, string descr) : this(id, nome, prod, descr, 10)
         {
         }
@@ -45,9 +46,9 @@ namespace Ecommerce
 
             return (this.Id == p.Id);
         }
-        public string[] TuString()
+        public  override string ToString()
         {
-            string[] p = {Id, Nome, Produttore, Descrizione, Convert.ToString(Prezzo)};
+             string p = "Id:" + Id + " Nome:" + Nome  +  " Produttore:" + Produttore + " Descrizione:"+ Descrizione + " Prezzo:" + Convert.ToString(Prezzo);
             return p;
         }
         public decimal Prezzo
@@ -64,6 +65,8 @@ namespace Ecommerce
                     throw new Exception("Il prezzo deve essere positivo");
             }
         }
+       
+        
         public string Id
         {
             get
@@ -119,6 +122,11 @@ namespace Ecommerce
                 else
                     throw new Exception("Inserire una descrizione valida");
             }
+        }
+
+        public virtual decimal  ScontaProd()
+        {
+            return this.Prezzo;
         }
 
         

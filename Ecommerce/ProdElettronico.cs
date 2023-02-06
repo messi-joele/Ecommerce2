@@ -9,13 +9,12 @@ namespace Ecommerce
     public class ProdElettronico : Prodotto
     {
         private string _codice;
-        private decimal _prezzoscont;
+        
 
-
-        public ProdElettronico(string id, string nome, string prod, string descr, decimal prezzo, string codice, decimal prezzoscont): base(id,nome, prod, descr, prezzo)
+        public ProdElettronico(string id, string nome, string prod, string descr, decimal prezzo, string codice): base(id,nome, prod, descr, prezzo)
         {
             Codice = codice;
-            Prezzoscont = prezzoscont;
+            
         }
 
         public string Codice {
@@ -24,22 +23,23 @@ namespace Ecommerce
 
             }
 
-        public decimal Prezzoscont
+        public override string ToString()
         {
-            get { return _prezzoscont; }
-            set { _prezzoscont = value; }   
+            return base.ToString() + " codice:" + Codice;
         }
 
-        public void Sconto ( ){
 
+        public override decimal ScontaProd ( ){
+            
 
             
 
             if(DateTime.Today.DayOfWeek == DayOfWeek.Monday)
             {
-                Prezzo =  Prezzo * 0.95m;
+               Prezzo -=Prezzo * 0.05m;
+                return Prezzo;
             }
-            
+           return base.ScontaProd( );
         }
     }
 

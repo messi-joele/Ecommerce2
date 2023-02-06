@@ -17,39 +17,24 @@ namespace Ecommerce
         {
             InitializeComponent();
             carica();
-            domainUpDown1.SelectedItem = Carne.Nome;
+            
         }
+
+        
         Carrello carrello1 = new Carrello("C123");
-        Prodotto Carne = new Prodotto("P1", "Carne", "Macelleria", "Carne di vacca");
-        Prodotto Latte = new Prodotto("P2", "Latte", "Latteria", "Latte di vacca");
-        Prodotto Acqua = new Prodotto("P3", "Acqua", "Stabilimento", "Acqua di fonte");
-        Prodotto Pane = new Prodotto("P4", "Pane", "Panettiere", "Pane arabo,poco nemica di marocco");
-        Prodotto Olio = new Prodotto("P5", "Olio", "Frantoio", "Olio Extra-vergine d'oliva");
-        Prodotto Uova = new Prodotto("P6", "Uova", "Pollaio", "Ouva di gallina ovaiola");
-        Prodotto Formaggio = new Prodotto("P7", "Formaggio", "Fomraggificio", "Formaggio di capra");
-        Prodotto Lego = new Prodotto("P8", "Lego", "LEGO®", "LEGO 60316 City Police Stazione di Polizia, con Elicottero Giocattolo e Camion della Spazzatura, Giochi per Bambini e Bambine dai 6 Anni, Idee Regalo");
-        Prodotto Computer = new Prodotto("P9", "Computer", "AKinformatica", "Pc desktop gaming completo Intel i5 11400F 4.4Ghz,Nvidia Ge Force Gtx 1650 Gaming 4gb Ddr5,Ram 16gb Ddr4,Ssd M.2 250gb + Hdd 1Tb Wifi - Windows 11 Pro - TALENT i550F");
-        Prodotto[] lista = new Prodotto[9];
+        Prodotto PennaBic = new Penne("P1", "Penna", "Bic", "Penna della Bic", 1, "stilografica");
+        Prodotto FoglioA4 = new Carta("P2", "Foglio", "Fabbriano", "Foglio A4", 0,5);
+        Prodotto Laptop = new ProdElettronico("P10", "Laptop", "Intel", "Laptop potente", 1000, "fi2n32");
+        Prodotto[] lista = new Prodotto[10];
         public void carica()
         {
-            domainUpDown1.Items.Add(Carne.Nome);
-            domainUpDown1.Items.Add(Latte.Nome);
-            domainUpDown1.Items.Add(Acqua.Nome);
-            domainUpDown1.Items.Add(Pane.Nome);
-            domainUpDown1.Items.Add(Olio.Nome);
-            domainUpDown1.Items.Add(Uova.Nome);
-            domainUpDown1.Items.Add(Formaggio.Nome);
-            domainUpDown1.Items.Add(Lego.Nome);
-            domainUpDown1.Items.Add(Computer.Nome);
-            lista[0] = Carne;
-            lista[1] = Latte;
-            lista[2] = Acqua;
-            lista[3] = Pane;
-            lista[4] = Olio;
-            lista[5] = Uova;
-            lista[6] = Formaggio;
-            lista[7] = Lego;
-            lista[8] = Computer;
+            domainUpDown1.Items.Add(PennaBic.Nome);
+            domainUpDown1.Items.Add(FoglioA4.Nome);
+            domainUpDown1.Items.Add(Laptop.Nome);
+            lista[0] = PennaBic;
+            lista[1] = FoglioA4;
+            
+            lista[2] = Laptop;
 
         }
         private void button1_Click(object sender, EventArgs e)
@@ -115,12 +100,18 @@ namespace Ecommerce
                     if (p != null)
                     {
                         ListViewItem itm;
-                        itm = new ListViewItem(p.TuString());
+                        itm = new ListViewItem(p.ToString());
                         listView1.Items.Add(itm);
                     }
                         
                 }          
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+             string[] Alimenti = new string[10];
+            Prodotto Salame = new Alimentare("P3", "Salame", "Salumiere", "Salame di maiale", 12, new DateTime(2023, 12, 31), Alimenti);
         }
     }
 }

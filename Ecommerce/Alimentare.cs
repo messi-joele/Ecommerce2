@@ -10,12 +10,12 @@ namespace Ecommerce
     {
         private DateTime scadenza;
         string[] alimenti = new string[10];
+        
 
-        public Alimentare (string id, string nome, string prod, string descr, decimal prezzo, DateTime scadenza, string[] alimenti ) : base(id, nome, prod, descr, prezzo)
+        public Alimentare (string id, string nome, string prod, string descr, decimal prezzo, DateTime scadenza, string[] alimenti) : base(id, nome, prod, descr, prezzo)
         {
             Scadenza = scadenza;
             Alimenti = alimenti;
-            
         }
 
         public DateTime Scadenza { 
@@ -30,28 +30,19 @@ namespace Ecommerce
             set { alimenti = value; }
         }
 
-        public void Sconto()
+       
+        
+        public override decimal ScontaProd()
         {
+
             if (DateTime.Today.DayOfWeek - scadenza.DayOfWeek < 7)
             {
-                Prezzo = Prezzo * 0.5m;
+                Prezzo -= Prezzo * 0.05m;
+                return Prezzo;
             }
-            
+            return base.ScontaProd();
         }
 
-        public void Carica (string a, string b, string c, string d, string e, string f, string g, string h, string i, string l)
-        {
-            alimenti[0]=  a;
-            alimenti[1] = b;
-            alimenti[2] = c;
-            alimenti[3] = d;
-            alimenti[4] = e;
-            alimenti[5] = f;
-            alimenti[6] = g;
-            alimenti[7] = h;
-            alimenti[8] = i;
-            alimenti[9] = l;
-           
-        }
+        
     }
 }
