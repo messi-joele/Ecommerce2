@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// Variabile di progettazione necessaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Pulire le risorse in uso.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">ha valore true se le risorse gestite devono essere eliminate, false in caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,161 +20,264 @@
             base.Dispose(disposing);
         }
 
-        #region Codice generato da Progettazione Windows Form
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Metodo necessario per il supporto della finestra di progettazione. Non modificare
-        /// il contenuto del metodo con l'editor di codice.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
-            this.button4 = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Produttore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Descrizione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Prezzo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button5 = new System.Windows.Forms.Button();
+            this.idTxt = new System.Windows.Forms.TextBox();
+            this.prezzoTxt = new System.Windows.Forms.TextBox();
+            this.descTxt = new System.Windows.Forms.TextBox();
+            this.NomeTxt = new System.Windows.Forms.TextBox();
+            this.prodTxt = new System.Windows.Forms.TextBox();
+            this.ciccio = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.inserisci = new System.Windows.Forms.Button();
+            this.mostra = new System.Windows.Forms.Button();
+            this.cancTxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cancella = new System.Windows.Forms.Button();
+            this.TIPOLOGIA = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // idTxt
             // 
-            this.button1.Location = new System.Drawing.Point(160, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.idTxt.Location = new System.Drawing.Point(36, 71);
+            this.idTxt.Name = "idTxt";
+            this.idTxt.Size = new System.Drawing.Size(100, 20);
+            this.idTxt.TabIndex = 0;
             // 
-            // button2
+            // prezzoTxt
             // 
-            this.button2.Location = new System.Drawing.Point(232, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.prezzoTxt.Location = new System.Drawing.Point(36, 223);
+            this.prezzoTxt.Name = "prezzoTxt";
+            this.prezzoTxt.Size = new System.Drawing.Size(100, 20);
+            this.prezzoTxt.TabIndex = 3;
             // 
-            // button3
+            // descTxt
             // 
-            this.button3.Location = new System.Drawing.Point(576, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Svuota";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.descTxt.Location = new System.Drawing.Point(180, 157);
+            this.descTxt.Name = "descTxt";
+            this.descTxt.Size = new System.Drawing.Size(100, 20);
+            this.descTxt.TabIndex = 4;
             // 
-            // domainUpDown1
+            // NomeTxt
             // 
-            this.domainUpDown1.Location = new System.Drawing.Point(12, 12);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.ReadOnly = true;
-            this.domainUpDown1.Size = new System.Drawing.Size(142, 20);
-            this.domainUpDown1.TabIndex = 6;
-            this.domainUpDown1.Text = "domainUpDown1";
+            this.NomeTxt.Location = new System.Drawing.Point(180, 71);
+            this.NomeTxt.Name = "NomeTxt";
+            this.NomeTxt.Size = new System.Drawing.Size(100, 20);
+            this.NomeTxt.TabIndex = 5;
             // 
-            // button4
+            // prodTxt
             // 
-            this.button4.Location = new System.Drawing.Point(429, 9);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Visualizza";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.prodTxt.Location = new System.Drawing.Point(36, 157);
+            this.prodTxt.Name = "prodTxt";
+            this.prodTxt.Size = new System.Drawing.Size(100, 20);
+            this.prodTxt.TabIndex = 6;
             // 
-            // listView1
+            // ciccio
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ID,
-            this.Nome,
-            this.Produttore,
-            this.Descrizione,
-            this.Prezzo});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 37);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(706, 295);
-            this.listView1.TabIndex = 8;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.ciccio.AutoSize = true;
+            this.ciccio.Location = new System.Drawing.Point(65, 25);
+            this.ciccio.Name = "ciccio";
+            this.ciccio.Size = new System.Drawing.Size(18, 13);
+            this.ciccio.TabIndex = 7;
+            this.ciccio.Text = "ID";
             // 
-            // ID
+            // label2
             // 
-            this.ID.Text = "ID";
-            this.ID.Width = 30;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(48, 248);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "SCADENZA";
             // 
-            // Nome
+            // label3
             // 
-            this.Nome.Text = "Nome";
-            this.Nome.Width = 80;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(65, 198);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "PREZZO";
             // 
-            // Produttore
+            // label4
             // 
-            this.Produttore.Text = "Produttore";
-            this.Produttore.Width = 90;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(189, 129);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "DESCRIZIONE";
             // 
-            // Descrizione
+            // label5
             // 
-            this.Descrizione.Text = "Descrizione";
-            this.Descrizione.Width = 1520;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(43, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "PRODUTTORE";
             // 
-            // Prezzo
+            // label6
             // 
-            this.Prezzo.Text = "Prezzo";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(212, 25);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "NOME";
             // 
-            // button5
+            // monthCalendar1
             // 
-            this.button5.Location = new System.Drawing.Point(333, 9);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.monthCalendar1.Location = new System.Drawing.Point(27, 270);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 13;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(349, 25);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(333, 294);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // inserisci
+            // 
+            this.inserisci.Location = new System.Drawing.Point(376, 337);
+            this.inserisci.Name = "inserisci";
+            this.inserisci.Size = new System.Drawing.Size(75, 23);
+            this.inserisci.TabIndex = 15;
+            this.inserisci.Text = "INSERISCI";
+            this.inserisci.UseVisualStyleBackColor = true;
+            this.inserisci.Click += new System.EventHandler(this.inserisci_Click);
+            // 
+            // mostra
+            // 
+            this.mostra.Location = new System.Drawing.Point(497, 337);
+            this.mostra.Name = "mostra";
+            this.mostra.Size = new System.Drawing.Size(75, 23);
+            this.mostra.TabIndex = 16;
+            this.mostra.Text = "MOSTRA";
+            this.mostra.UseVisualStyleBackColor = true;
+            this.mostra.Click += new System.EventHandler(this.mostra_Click);
+            // 
+            // cancTxt
+            // 
+            this.cancTxt.Location = new System.Drawing.Point(376, 411);
+            this.cancTxt.Name = "cancTxt";
+            this.cancTxt.Size = new System.Drawing.Size(123, 20);
+            this.cancTxt.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(373, 379);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "CANCELLA PRODOTTO";
+            // 
+            // cancella
+            // 
+            this.cancella.Location = new System.Drawing.Point(514, 408);
+            this.cancella.Name = "cancella";
+            this.cancella.Size = new System.Drawing.Size(75, 23);
+            this.cancella.TabIndex = 19;
+            this.cancella.Text = "CANCELLA";
+            this.cancella.UseVisualStyleBackColor = true;
+            this.cancella.Click += new System.EventHandler(this.cancella_Click);
+            // 
+            // TIPOLOGIA
+            // 
+            this.TIPOLOGIA.AutoSize = true;
+            this.TIPOLOGIA.Location = new System.Drawing.Point(192, 198);
+            this.TIPOLOGIA.Name = "TIPOLOGIA";
+            this.TIPOLOGIA.Size = new System.Drawing.Size(64, 13);
+            this.TIPOLOGIA.TabIndex = 20;
+            this.TIPOLOGIA.Text = "TIPOLOGIA";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "",
+            "Alimentare",
+            "Elettronico",
+            "Cancelleria (Penna)",
+            "Cancelleria (Foglio di Carta)"});
+            this.comboBox1.Location = new System.Drawing.Point(180, 222);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 21;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 341);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.domainUpDown1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TIPOLOGIA);
+            this.Controls.Add(this.cancella);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cancTxt);
+            this.Controls.Add(this.mostra);
+            this.Controls.Add(this.inserisci);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ciccio);
+            this.Controls.Add(this.prodTxt);
+            this.Controls.Add(this.NomeTxt);
+            this.Controls.Add(this.descTxt);
+            this.Controls.Add(this.prezzoTxt);
+            this.Controls.Add(this.idTxt);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
-        private System.Windows.Forms.Button button4;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader ID;
-        private System.Windows.Forms.ColumnHeader Nome;
-        private System.Windows.Forms.ColumnHeader Produttore;
-        private System.Windows.Forms.ColumnHeader Prezzo;
-        private System.Windows.Forms.ColumnHeader Descrizione;
-        private System.Windows.Forms.Button button5;
+
+        private System.Windows.Forms.TextBox idTxt;
+        private System.Windows.Forms.TextBox prezzoTxt;
+        private System.Windows.Forms.TextBox descTxt;
+        private System.Windows.Forms.TextBox NomeTxt;
+        private System.Windows.Forms.TextBox prodTxt;
+        private System.Windows.Forms.Label ciccio;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button inserisci;
+        private System.Windows.Forms.Button mostra;
+        private System.Windows.Forms.TextBox cancTxt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cancella;
+        private System.Windows.Forms.Label TIPOLOGIA;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
-
